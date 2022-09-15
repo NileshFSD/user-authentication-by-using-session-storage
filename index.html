@@ -155,6 +155,7 @@
           alert("Password length must be more than 6 ");
         } else {
           sessionStorage.setItem(email1, password1); //storing value in session storage
+          container.removeChild(document.querySelector(".login"));
           container.classList.add("newProp");
           alert(
             "UserDetails stored successfully, Please sign-In with registered Email & password"
